@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo tailwind youtube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/152/152810.png" type="image/x-icon">
+</head>
+<body class="bg-gray-100">
+
+    <header class="fixed w-full bg-white shadow-sm">
+        <div class="flex items-center justify-between px-4 h-14">
+
+            <div class="flex items-center">
+                <button class="p-2 mx-2 rounded-full hover:bg-gray-200" aria-label="Menu">
+                    <i class="fas fa-bars text-gray-600"></i>
+                </button>
+                <div class="flex items-center cursor-pointer">
+                    <i class="fab fa-youtube text-red-600 text-2xl"></i>
+                    <span class="ml-1 font-semibold text-xl">YouTube</span>
+                    <span class="text-xs ml-0.5 text-gray-500 self-end">BR</span>
+                </div>
+            </div>
+
+            <div class="hidden md:flex flex-1 max-w-2xl mx-4">
+                <div class="flex w-full">
+                    <input type="text" placeholder="Pesquisar" 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:border-blue-500">
+                    <button class="px-6 bg-gray-100 border border-l-0 border-gray-300 rounded-r-full hover:bg-gray-200">
+                        <i class="fas fa-search text-gray-600"></i>
+                    </button>
+                </div>
+                <button class="ml-4 p-2 bg-gray-100 rounded-full hover:bg-gray-200">
+                    <i class="fas fa-microphone text-gray-600"></i>
+                </button>
+            </div>
+
+            <div class="flex items-center">
+                <button class="p-2 mx-1 rounded-full hover:bg-gray-200">
+                    <i class="fas fa-video text-gray-600"></i>
+                </button>
+                <button class="p-2 mx-1 rounded-full hover:bg-gray-200">
+                    <i class="fas fa-th text-gray-600"></i>
+                </button>
+                <button class="p-2 mx-1 rounded-full hover:bg-gray-200 relative">
+                    <i class="fas fa-bell text-gray-600"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <button class="w-8 h-8 ml-2 rounded-full bg-blue-500 text-white font-medium flex items-center justify-center">
+                    <span>OS</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex pt-14">
+
+        <aside class="w-64 h-screen bg-white fixed overflow-y-auto hidden md:block">
+            <div class="py-4">
+                <div class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center text-red-600 font-medium">
+                    <i class="fas fa-home mr-6 text-lg"></i>
+                    <span class="text-sm">Início</span>
+                </div>
+                <div class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center text-gray-700">
+                    <i class="fas fa-compass mr-6 text-lg"></i>
+                    <span class="text-sm">Explorar</span>
+                </div>
+                <div class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center text-gray-700">
+                    <i class="fas fa-play-circle mr-6 text-lg"></i>
+                    <span class="text-sm">Shorts</span>
+                </div>
+                <div class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center text-gray-700">
+                    <i class="fas fa-subscription mr-6 text-lg"></i>
+                    <span class="text-sm">Inscrições</span>
+                </div>
+                <div class="border-t border-gray-200 my-2"></div>
+                <div class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center text-gray-700">
+                    <i class="fas fa-photo-video mr-6 text-lg"></i>
+                    <span class="text-sm">Biblioteca</span>
+                </div>
+                <div class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center text-gray-700">
+                    <i class="fas fa-history mr-6 text-lg"></i>
+                    <span class="text-sm">Histórico</span>
+                </div>
+                <div class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center text-gray-700">
+                    <i class="fas fa-clock mr-6 text-lg"></i>
+                    <span class="text-sm">Assistir mais tarde</span>
+                </div>
+                <div class="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center text-gray-700">
+                    <i class="fas fa-thumbs-up mr-6 text-lg"></i>
+                    <span class="text-sm">Vídeos marcados com gostei</span>
+                </div>
+                <div class="border-t border-gray-200 my-2"></div>
+                <h3 class="px-4 py-2 text-sm font-medium text-gray-700">INSCRIÇÕES</h3>
+                <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center">
+                    <div class="w-6 h-6 rounded-full bg-red-500 mr-6 flex-shrink-0"></div>
+                    <span class="text-sm truncate">osmarneto</span>
+                </div>
+                <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center">
+                    <div class="w-6 h-6 rounded-full bg-blue-500 mr-6 flex-shrink-0"></div>
+                    <span class="text-sm truncate">estudos tailwind</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 md:ml-64 p-4">
+            <div class="flex space-x-2 mb-4 overflow-x-auto pb-2">
+                <button class="px-3 py-1 bg-black text-white rounded-full text-sm whitespace-nowrap">Tudo</button>
+                <button class="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm whitespace-nowrap">Música</button>
+                <button class="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm whitespace-nowrap">Ao vivo</button>
+                <button class="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm whitespace-nowrap">Jogos</button>
+                <button class="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm whitespace-nowrap">Notícias</button>
+                <button class="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm whitespace-nowrap">Futebol</button>
+                <button class="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm whitespace-nowrap">Programação</button>
+                <button class="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm whitespace-nowrap">Podcasts</button>
+                <button class="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm whitespace-nowrap">Cozinha</button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5">
+                    <div class="relative">
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/youtube-thumbnail-template-design-5fa9cd79a6367f8446a5208e4540a493_screen.jpg?ts=1699135222" alt="Thumbnail" class="w-full h-auto">
+                        <span class="absolute bottom-2 right-2 bg-black bg-opacity-80 text-white text-xs px-1.5 py-0.5 rounded">10:30</span>
+                    </div>
+                    <div class="p-3">
+                        <div class="flex">
+                            <div class="flex-shrink-0 mr-3">
+                                <div class="w-9 h-9 rounded-full bg-gray-300"></div>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-sm line-clamp-2">titulo</h3>
+                                <p class="text-gray-600 text-xs mt-1">nome do canal</p>
+                                <p class="text-gray-500 text-xs">visualizações em x tempo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5">
+                    <div class="relative">
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/youtube-thumbnail-template-design-5fa9cd79a6367f8446a5208e4540a493_screen.jpg?ts=1699135222" alt="Thumbnail" class="w-full h-auto">
+                        <span class="absolute bottom-2 right-2 bg-black bg-opacity-80 text-white text-xs px-1.5 py-0.5 rounded">15:45</span>
+                    </div>
+                    <div class="p-3">
+                        <div class="flex">
+                            <div class="flex-shrink-0 mr-3">
+                                <div class="w-9 h-9 rounded-full bg-gray-300"></div>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-sm line-clamp-2">titulo</h3>
+                                <p class="text-gray-600 text-xs mt-1">nome do canal</p>
+                                <p class="text-gray-500 text-xs">visualizações em x tempo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5">
+                    <div class="relative">
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/youtube-thumbnail-template-design-5fa9cd79a6367f8446a5208e4540a493_screen.jpg?ts=1699135222" alt="Thumbnail" class="w-full h-auto">
+                        <span class="absolute bottom-2 right-2 bg-black bg-opacity-80 text-white text-xs px-1.5 py-0.5 rounded">22:10</span>
+                    </div>
+                    <div class="p-3">
+                        <div class="flex">
+                            <div class="flex-shrink-0 mr-3">
+                                <div class="w-9 h-9 rounded-full bg-gray-300"></div>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-sm line-clamp-2">titulo</h3>
+                                <p class="text-gray-600 text-xs mt-1">nome do canal</p>
+                                <p class="text-gray-500 text-xs">visualizações em x tempo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5">
+                    <div class="relative">
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/youtube-thumbnail-template-design-5fa9cd79a6367f8446a5208e4540a493_screen.jpg?ts=1699135222" alt="Thumbnail" class="w-full h-auto">
+                        <span class="absolute bottom-2 right-2 bg-black bg-opacity-80 text-white text-xs px-1.5 py-0.5 rounded">05:20</span>
+                    </div>
+                    <div class="p-3">
+                        <div class="flex">
+                            <div class="flex-shrink-0 mr-3">
+                                <div class="w-9 h-9 rounded-full bg-gray-300"></div>
+                            </div>
+                           <div>
+                                <h3 class="font-medium text-sm line-clamp-2">titulo</h3>
+                                <p class="text-gray-600 text-xs mt-1">nome do canal</p>
+                                <p class="text-gray-500 text-xs">visualizações em x tempo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
